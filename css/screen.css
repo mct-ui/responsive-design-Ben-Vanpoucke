@@ -452,7 +452,26 @@ a:focus {
 }
 
 .c-link-cta::after {
+    color: #3E3EA8;
+    content:" and more";
+    transform: scaleX(1)
+}
+
+.c-link-cta::before{
+    content:"";
+    display:block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
     color: #7373F5;
+    transform: scaleX(.5);
+    transform-origin: left;
+    transition-property: transform background-color;
+    transition-duration: .175s;
+    transition-timing-function: ease-in;
+
 }
 
 .c-link-cta:hover {
